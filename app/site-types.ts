@@ -1,0 +1,42 @@
+export type SiteData = {
+  brand: string;
+  mark: string;
+  specialty: string;
+  city: string;
+  eyebrow: string;
+  headline: string;
+  intro: string;
+  heroCardTitle: string;
+  heroCardText: string;
+  phoneDisplay: string;
+  phoneHref: string;
+  whatsappHref: string;
+  email: string;
+  address: string;
+  hours: string;
+  established: string;
+  variant: "serene" | "editorial" | "clinical" | "warm" | "bold";
+  theme: {
+    ink: string;
+    muted: string;
+    paper: string;
+    surface: string;
+    primary: string;
+    primaryDark: string;
+    accent: string;
+    line: string;
+  };
+  stats: ReadonlyArray<{ value: string; label: string }>;
+  services: ReadonlyArray<{ icon: string; title: string; description: string }>;
+  doctor: {
+    name: string;
+    title: string;
+    initials: string;
+    bio: string;
+    credentials: ReadonlyArray<string>;
+  };
+  promises: ReadonlyArray<{ title: string; description: string }>;
+  process: ReadonlyArray<{ step: string; title: string; description: string }>;
+  testimonial: { quote: string; author: string; detail: string };
+  faqs: ReadonlyArray<{ question: string; answer: string }>;
+};
